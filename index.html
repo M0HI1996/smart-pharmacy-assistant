@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Pharmacy Assistant</title>
+</head>
+<body>
+    <h2>🧠 Smart Pharmacy Assistant</h2>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Enter medicine or question..." required>
+        <button type="submit">Ask</button>
+    </form>
+    {% if result %}
+    <h3>💬 Response:</h3>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
